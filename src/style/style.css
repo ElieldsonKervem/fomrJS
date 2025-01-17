@@ -1,0 +1,290 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+html {
+    font-size: 62.5%;
+    
+  }
+  
+  body {
+    font-size: 1.6rem; 
+    background-color: #625D74;
+  }
+
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+    display: block;
+}
+body {
+    line-height: 1;
+    font-family: 'Robot';
+}
+ol, ul {
+    list-style: none;
+}
+blockquote, q {
+    quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+    content: '';
+    content: none;
+}
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+/* fim do reset */
+
+main {
+    width:100%;
+    max-width: 120rem;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    background: #2B2738;
+    margin: 2rem auto;
+    color: white;
+    padding: 2rem 0rem 3rem 0rem;
+    justify-content: space-between;
+    border-radius: 4rem;
+    box-shadow: 1rem 1rem rgba(0, 0, 0, 0.192);
+} 
+a{
+    color: #8374a8;
+}
+input:focus{
+    border: #6E54B5 1px solid;
+    outline: 1px solid #6E54B5;
+}
+main h1{
+    font-size: 4rem;
+}
+.layoutContainer{
+    background: url('../assets/moutainImg.jpg')no-repeat;
+    height: 65rem;
+    width: 60rem;
+    background-size: cover;
+    background-position: center;
+    border-radius: 1rem;
+    margin: 0;
+    margin-left: 2rem;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center
+}
+.layoutContainer h1 {
+    margin-top: 50rem;
+}
+
+.layoutContainer .containerLayoutDot{
+  display: flex;
+  justify-content: space-around;
+  flex-direction: row;
+  width: 27rem;
+  margin: 2rem auto;
+}
+.layoutContainer .containerLayoutDot .dot{
+    width: 8rem;
+    height: 1rem;
+    background: #3B3748;
+    border-radius: 4rem;
+}
+main .inputContainer {
+    margin-right: 8rem;
+    display: flex;
+    flex-direction: column;
+    padding: 5rem 0rem;
+    gap: 1.5rem;
+}
+
+main .userNameInformation{
+    margin-top: 3rem;
+}
+.containerEmail{
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    margin-top: 2rem;
+}
+
+form input {
+    background: #3B364C;
+    height: 5rem;
+    border-radius: 1rem;
+    border: none;
+    padding: 2rem;
+    color: white;
+}
+.termAndServiceContainer {
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    gap: 1rem;
+    
+}
+
+.userLastName{
+    margin-left: 2rem;
+}
+a:hover{
+    color: #ef7ed1;
+}
+button.primaryBtn {
+    width: 38rem;
+    height: 4rem;
+    border-radius: 1rem;
+    background: #ef7ed1;
+    color: white;
+    font-weight: bold;
+    transition: 1s all;
+}
+.primaryBtn:hover{
+   background: #6E54B5;
+   border: none;
+   cursor: pointer;
+   transition: 1s all;
+}
+
+.lineLayout {
+    display: flex;
+    flex-direction: row;
+    align-content: center;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 2rem;
+}
+.lineLayout div {
+    width: 10rem;
+    height: 0.4rem;
+    background: #3B3748;
+}
+
+main footer {
+    display: flex;
+    margin-top: 4rem;
+    justify-content: space-around;
+    
+}
+
+.btnSecondary{
+    width: 15rem;
+    height: 5rem;
+    background: none;
+    border: 0.1rem solid rgba(174, 174, 174, 0.192);
+    color: white;
+    cursor: pointer;
+    border-radius: 4px;
+    transition: 1s all;
+}
+
+.btnSecondary:hover{
+    background: #6E54B5;
+    transition: 1s all;
+}
+.termAndServiceContainer span a {
+    margin-left: 0.5rem;
+}
+h3 span a {
+    margin-left: 0.5rem;
+}
+
+
+footer button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+    gap: 2rem;
+    font-size: 1.2rem;
+}
+footer .fa-google-plus-g{
+    font-size: 2rem;
+}
+
+footer .fa-apple{
+    font-size: 2rem;
+}
+.layoutLabel {
+    opacity: 1;
+    transition: opacity 0.5s ease-in-out; /* Transição suave */
+}
+.layoutContainer{
+    text-align: center;
+}
+.layoutLabel {
+    width: 50rem;
+    text-align: center
+}
+
+.layoutLabel.hidden {
+    opacity: 0;
+}
+
+.pink{
+    background: #ef7ed1 !important;
+}
+
+@media (max-width:1150px){
+    main {
+        justify-content: center
+    
+    }
+    .layoutContainer{
+        display: none;
+    }
+}
+
+@media (max-width:500px){
+    main{
+        width: 37rem;
+    }
+    main .inputContainer {
+        width: 30rem;
+        margin-right: 0rem;
+        display: flex;
+        flex-direction: column;
+        padding: 3rem 0rem;
+        gap: 1.5rem;
+    }
+    button.primaryBtn {
+        width: 26rem;
+        height: 4rem;
+    }
+    .userLastName {
+        margin-left: 0rem;
+    }
+    .userNameInformation {
+        display: flex;
+        flex-direction: column;
+        gap: 2rem;
+    }
+
+    form{
+        padding: 2rem;
+    }
+}

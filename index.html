@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./src/style/style.css">
+    <title>Form</title>
+</head>
+<body>
+     
+    <main>
+        
+        
+             <div class="layoutContainer">
+                <h1 class="layoutLabel">
+                    Capture Moments, Creating Memories
+                </h1>
+                <div class="containerLayoutDot">
+                    <div class="dot pink"></div>
+                    <div class="dot"></div>
+                    <div class="dot"></div>
+                </div>
+               
+             </div>
+         
+         <div class="inputContainer">
+                <h1>Create a count</h1>
+                <h3>Already have a count? 
+                <span> <a href="#">log in</a> 
+                </span>
+                </h3>
+                <form action="">
+                    <div class="userNameInformation">
+                        <input type="text" required class="userFirstName" placeholder="Digite seu nome">
+                        <input type="text" required class="userLastName" placeholder="Digite seu sobrenome aqui">
+                    </div>
+                     <div class="containerEmail">
+                        <input type="email" required  placeholder="Digite aqui seu email" class="userEmail">
+                        <input type="password" name="userPassword" id="" class="passwordUser" placeholder="Senha" required>
+                     </div>
+                     
+                     <div class="termAndServiceContainer">
+                        <input type="checkbox" name="userTerm" class="userTermInput" required >
+                        <span>Eu concordo com os 
+                            <a href="#">Termos de serviços</a>
+                        </span>
+                     </div>
+                     <button class="primaryBtn">Criar conta</button>
+                     <section class="lineLayout">
+                         <div></div>
+                         <span>Ou registre-se com</span>
+                         <div></div>
+                     </section>
+                     <footer>
+                        <button class="btnSecondary">
+                            <i class="fa-brands fa-google-plus-g"></i>
+                             Google
+                        </button>
+                        <button class="btnSecondary">
+                            <i class="fa-brands fa-apple"></i>
+                             Apple
+                        </button>
+                     </footer>
+                </form>    
+         </div>
+    </main>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/js/all.min.js" integrity="sha512-b+nQTCdtTBIRIbraqNEwsjB6UvL3UEMkXnhzd8awtCYh0Kcsjl9uEgwVFVbhoj3uu1DO1ZMacNvLoyJJiNfcvg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="./src/js/index.js" type="module"></script>
+</body>
+</html>
